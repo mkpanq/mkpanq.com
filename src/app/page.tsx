@@ -21,7 +21,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
 }
 
 export default async function Home() {
-  const articles = (await getAllArticles()).slice(0, 4);
+  const articles = (await getAllArticles()).slice(0, 3);
 
   return (
     <>
@@ -44,7 +44,10 @@ export default async function Home() {
         </div>
       </Container>
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
+        <h1 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+          Latest articles
+        </h1>
+        <div className="grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-3xl mt-10">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
