@@ -1,6 +1,5 @@
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
-import Resume from "@/components/Resume";
 import SocialLink from "@/components/SocialLink";
 import Socials from "@/config/socials";
 import { type ArticleWithSlug, getAllArticles } from "@/lib/articles";

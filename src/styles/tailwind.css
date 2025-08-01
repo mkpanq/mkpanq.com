@@ -33,4 +33,6 @@
   --text-8xl--line-height: 1;
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
+  --color-default-accent: #c97230;
+  --color-default-accent-dark: #fa7b13;
 }
