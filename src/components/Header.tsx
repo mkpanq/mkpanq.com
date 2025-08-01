@@ -90,13 +90,13 @@ function NavItem({
         className={clsx(
           "relative block px-3 py-2 transition",
           isActive
-            ? "text-default-accent dark:text-default-accent-dark"
-            : "hover:text-default-accent dark:hover:text-default-accent-dark",
+            ? "text-amber-600 dark:text-amber-600"
+            : "hover:text-amber-600 dark:hover:text-amber-600",
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-default-accent/0 via-default-accent/40 to-default-accent/0 dark:from-default-accent-dark/0 dark:via-default-accent-dark/40 dark:to-default-accent-dark/0" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-amber-600/0 via-amber-600/40 to-amber-600/0 dark:from-amber-600/0 dark:via-amber-600/40 dark:to-amber-600/0" />
         )}
       </Link>
     </li>
@@ -133,8 +133,8 @@ function ThemeToggle() {
       className="group rounded-full bg-white/90 px-3 py-2 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
       onClick={() => setTheme(otherTheme)}
     >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-default-accent [@media(prefers-color-scheme:dark)]:stroke-default-accent [@media(prefers-color-scheme:dark)]:group-hover:fill-default-accent [@media(prefers-color-scheme:dark)]:group-hover:stroke-default-accent-dark" />
-      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition not-[@media_(prefers-color-scheme:dark)]:fill-default-accent-dark/10 not-[@media_(prefers-color-scheme:dark)]:stroke-default-accent dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400" />
+      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-amber-600 [@media(prefers-color-scheme:dark)]:stroke-amber-600 [@media(prefers-color-scheme:dark)]:group-hover:fill-amber-600 [@media(prefers-color-scheme:dark)]:group-hover:stroke-amber-600" />
+      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition not-[@media_(prefers-color-scheme:dark)]:fill-amber-600/10 not-[@media_(prefers-color-scheme:dark)]:stroke-amber-600 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400" />
     </button>
   );
 }
