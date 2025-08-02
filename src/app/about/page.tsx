@@ -32,7 +32,7 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I'm a fullstack developer with a bakcend roots, frontend focus and
+              I'm a fullstack developer with a backend roots, frontend focus and
               a product mindset. I've worked on everything from greenfield apps
               to multi-year legacy systems, often bridging the gap between
               design, tech, and business needs. I care about building things
