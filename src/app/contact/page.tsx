@@ -7,7 +7,7 @@ import Socials from "@/config/socials";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "I’m Spencer Sharp. I live in New York City, where I design the future.",
+    "I'm Marek, a fullstack software engineer based in Warsaw, Poland. I build thoughtful software and help teams focus on what matters — solid engineering and a product-first mindset.",
 };
 
 export default function Contact() {
