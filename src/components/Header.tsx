@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Container } from "@/components/Container";
 import SiteNavigation from "@/config/navigation";
-import avatarImage from "@/images/avatar.jpg";
+import avatarImage from "@/images/avatar.jpeg";
 import { ChevronDownIcon, CloseIcon, MoonIcon, SunIcon } from "./Icons";
 
 function MobileNavItem({
@@ -180,7 +180,7 @@ function Avatar({
         sizes={large ? "4rem" : "2.25rem"}
         className={clsx(
           "rounded-full bg-zinc-100 object-cover dark:bg-zinc-800",
-          large ? "h-16 w-16" : "h-9 w-9",
+          large ? "h-20 w-20" : "h-9 w-9",
         )}
         priority
       />
@@ -334,7 +334,7 @@ export function Header() {
                   />
                   <Avatar
                     large
-                    className="block h-16 w-16 origin-left"
+                    className="block h-20 w-20 origin-left"
                     style={{ transform: "var(--avatar-image-transform)" }}
                   />
                 </div>

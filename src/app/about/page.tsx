@@ -1,8 +1,5 @@
-import clsx from "clsx";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-
 import { Container } from "@/components/Container";
 import SocialLink from "@/components/SocialLink";
 import Socials from "@/config/socials";
@@ -11,7 +8,7 @@ import portraitImage from "@/images/portrait.jpg";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "I’m Spencer Sharp. I live in New York City, where I design the future.",
+    "I'm Marek, a fullstack software engineer based in Warsaw, Poland. I build thoughtful software and help teams focus on what matters — solid engineering and a product-first mindset.",
 };
 
 export default function About() {
@@ -29,36 +26,41 @@ export default function About() {
           </div>
         </div>
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Spencer Sharp. I live in New York City, where I design the
-            future.
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100">
+            I'm Marek Pankowski. I live in Warsaw, Poland, where I try to build
+            digital things
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I'm a fullstack developer with a bakcend roots, frontend focus and
+              a product mindset. I've worked on everything from greenfield apps
+              to multi-year legacy systems, often bridging the gap between
+              design, tech, and business needs. I care about building things
+              that make sense for the user and the team behind it — and I enjoy
+              working in collaborative, feedback-driven environments.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              My strongest experience is with React, TypeScript, and Ruby on
+              Rails, but I try to stay tech-agnostic and choose tools that fit
+              the problem, not the other way around. I've worked in agile teams,
+              led frontend development on larger features, and contributed
+              across the stack when needed. I'm also PSPO I certified, and I
+              often work closely with designers and product folks to turn ideas
+              into something real.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              Over the years, I've worked across different industries and team
+              setups — from fast-moving startups to more structured environments
+              — often in remote, international teams. I value clear
+              communication, flexibility, and taking ownership — not just of the
+              features I build, but of the product as a whole. I approach
+              development with a mix of curiosity, pragmatism, and care for both
+              the technical and human side of the work.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              After hours, I enjoy watching F1 and NBA basketball (Miami Heat
+              supporter 🔥). Wannabe (sim)racing driver and future F1 team owner
+              🙈
             </p>
           </div>
         </div>

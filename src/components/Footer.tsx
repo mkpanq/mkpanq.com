@@ -34,9 +34,9 @@ export function Footer() {
                   </NavLink>
                 ))}
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Marek Pankowski. All rights
-                reserved.
+              <p className="max-sm:text-center text-sm text-zinc-400 dark:text-zinc-500">
+                mkpanq.com &copy; {new Date().getFullYear()} Marek Pankowski.
+                All rights reserved.
               </p>
             </div>
           </ContainerInner>
