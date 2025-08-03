@@ -15,7 +15,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Container } from "@/components/Container";
 import SiteNavigation from "@/config/navigation";
-import avatarImage from "@/images/avatar.jpeg";
+import avatarImage from "../../public/avatar.jpeg";
 import { ChevronDownIcon, CloseIcon, MoonIcon, SunIcon } from "./Icons";
 
 function MobileNavItem({

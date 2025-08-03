@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import SocialLink from "@/components/SocialLink";
 import Socials from "@/config/socials";
-import portraitImage from "@/images/portrait.jpg";
+import portraitImage from "../../../public/portrait.jpg";
 
 export const metadata: Metadata = {
   title: "About",
