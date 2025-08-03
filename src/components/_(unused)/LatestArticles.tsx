@@ -1,6 +1,6 @@
 import type { ArticleWithSlug } from "@/lib/articles";
 import { formatDate } from "@/lib/formatDate";
-import { Card } from "./Card";
+import { Card } from "../Card";
 
 export function LatestArticles({ articles }: { articles: ArticleWithSlug[] }) {
   return (

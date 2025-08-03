@@ -1,7 +1,7 @@
 import { Button } from "@headlessui/react";
 import Image from "next/image";
 import { ResumeRoles, type Role } from "@/config/roles";
-import { ArrowDownIcon, BriefcaseIcon } from "./Icons";
+import { ArrowDownIcon, BriefcaseIcon } from "../Icons";
 
 function RoleItem({ role }: { role: Role }) {
   const startLabel =
