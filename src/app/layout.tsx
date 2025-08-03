@@ -6,16 +6,98 @@ import { Layout } from "@/components/Layout";
 import "@/styles/tailwind.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://mkpanq.com",
+  ),
+  applicationName: "mkpanq.com",
+  creator: "Marek Pankowski",
+  publisher: "Marek Pankowski",
   title: {
     template: "%s - Marek Pankowski",
     default: "Marek Pankowski - Fullstack Software Engineer",
   },
   description:
     "I'm Marek, a fullstack software engineer based in Warsaw, Poland. I build thoughtful software and help teams focus on what matters — solid engineering and a product-first mindset.",
-  alternates: {
-    types: {
-      "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
+  },
+  openGraph: {
+    siteName: "Marek Pankowski - Fullstack Software Engineer",
+    description:
+      "I'm Marek, a fullstack software engineer based in Warsaw, Poland. I build thoughtful software and help teams focus on what matters — solid engineering and a product-first mindset.",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: `https://dynamic-og-image-generator.vercel.app/api/generate?title=Home&author=Marek+Pankowski&websiteUrl=https%3A%2F%2Fmkpanq.com%2F&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F17934750&theme=default`,
+        width: 1200,
+        height: 630,
+        alt: `mkpanq.com`,
+      },
+    ],
+  },
+  twitter: {
+    creator: "@mkpanq",
+    card: "summary_large_image",
+    title: "Marek Pankowski - Fullstack Software Engineer",
+    description:
+      "I'm Marek, a fullstack software engineer based in Warsaw, Poland. I build thoughtful software and help teams focus on what matters — solid engineering and a product-first mindset.",
+    images:
+      "https://dynamic-og-image-generator.vercel.app/api/generate?title=Home&author=Marek+Pankowski&websiteUrl=https%3A%2F%2Fmkpanq.com%2F&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F17934750&theme=default",
+  },
+  appleWebApp: {
+    title: "mkpanq.com | Marek Pankowski",
+    statusBarStyle: "black-translucent",
+    capable: true,
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+    shortcut: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 };
 
