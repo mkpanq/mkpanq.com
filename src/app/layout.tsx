@@ -108,6 +108,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://analytics.mkpanq.com/script.js"
+          data-website-id="025ba108-fcbc-43cb-8b68-9c4feab5d3e4"
+        ></script>
+      </head>
       <body className="flex h-full bg-white dark:bg-black bg-[radial-gradient(#CECFD3_1px,transparent_1px)] dark:bg-[radial-gradient(#323333_1px,transparent_1px)] [background-size:20px_20px] -z-10">
         <Providers>
           <div className="flex w-full">
