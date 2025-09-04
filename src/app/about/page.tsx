@@ -67,10 +67,10 @@ export default function About() {
               My strongest experience is with React, TypeScript, and Ruby on
               Rails, but I try to stay tech-agnostic and choose tools that fit
               the problem, not the other way around. I've worked in agile teams,
-              led frontend development on larger features, and contributed
-              across the stack when needed. I'm also PSPO I certified, and I
-              often work closely with designers and product folks to turn ideas
-              into something real.
+              led frontend and backend development on larger features, and
+              contributed across the stack when needed. I'm also PSPO I
+              certified, and I often work closely with designers and product
+              folks to turn ideas into something real.
             </p>
             <p>
               Over the years, I've worked across different industries and team
