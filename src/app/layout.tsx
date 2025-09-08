@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-
+import { Inter } from "next/font/google";
 import { Providers } from "@/app/providers";
 import { Layout } from "@/components/Layout";
 
 import "@/styles/tailwind.css";
+
+const interFont = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -92,7 +96,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${interFont.className} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <head>
         <script
           defer
