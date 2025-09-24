@@ -26,7 +26,7 @@ const Socials = [
   },
   {
     name: "Email",
-    href: "mailto:%6d%61%72%65%6b%2e%6b%2e%70%61%6e%6b%6f%77%73%6b%69%40%67%6d%61%69%6c%2e%63%6f%6d",
+    href: "mailto:%6d%61%72%65%6b%40%6d%6b%70%61%6e%71%2e%63%6f%6d",
     icon: MailIcon,
     additionalText: "Email me",
   },
