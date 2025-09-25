@@ -4,6 +4,7 @@ const SiteNavigation: {
 }[] = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
+  { title: "Garden", href: "/garden" },
   // { title: "Articles", href: "/articles" },
   { title: "Contact", href: "/contact" },
 ];
