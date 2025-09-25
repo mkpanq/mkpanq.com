@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Container } from "@/components/Container";
+import GardenBrowser from "@/components/GardenBrowser";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -33,5 +34,21 @@ export const metadata: Metadata = {
 };
 
 export default function Garden() {
-  return <Container className="mt-16 sm:mt-32">Garden</Container>;
+  return (
+    <Container className="mt-16 sm:mt-32">
+      <div className="max-w-3xl lg:order-first lg:row-span-2 space-y-6">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          The Garden 🪴
+        </h1>
+        <div className="text-base text-zinc-600 dark:text-zinc-400">
+          <p>
+            Here’s my corner of the web where I keep links, essays, notes,
+            talks, podcasts, my thoughts and many, many more... Go ahead and use
+            the search bar to check them out!
+          </p>
+        </div>
+      </div>
+      <GardenBrowser />
+    </Container>
+  );
 }
