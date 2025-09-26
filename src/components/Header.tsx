@@ -150,11 +150,16 @@ function Avatar() {
   return (
     <div className="rounded-lg p-0.5 backdrop-blur-sm">
       <Link href="/" aria-label="Home" className="pointer-events-auto">
-        <Image src={lightLogo} alt="" className="w-40 dark:hidden" priority />
+        <Image
+          src={lightLogo}
+          alt=""
+          className="w-40 block dark:hidden"
+          priority
+        />
         <Image
           src={darkLogo}
           alt=""
-          className="w-40 not-dark:hidden"
+          className="w-40 hidden dark:block"
           priority
         />
       </Link>
