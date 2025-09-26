@@ -69,7 +69,12 @@ export const metadata: Metadata = {
         type: "image/x-icon",
       },
       {
-        url: "/logo.svg",
+        url: "/logo-dark.svg",
+        sizes: "any",
+        type: "image/svg",
+      },
+      {
+        url: "/logo-light.svg",
         sizes: "any",
         type: "image/svg",
       },
