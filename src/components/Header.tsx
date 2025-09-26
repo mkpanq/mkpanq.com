@@ -15,7 +15,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { Container } from "@/components/Container";
 import SiteNavigation from "@/config/navigation";
-import logoImage from "../../public/logo.svg";
+import darkLogo from "../../public/logo-dark.svg";
+import lightLogo from "../../public/logo-light.svg";
 import { ChevronDownIcon, CloseIcon, MoonIcon, SunIcon } from "./Icons";
 
 function MobileNavItem({
@@ -146,10 +147,16 @@ function clamp(number: number, a: number, b: number) {
 }
 
 function Avatar() {
+  const { resolvedTheme } = useTheme();
   return (
     <div className="rounded-lg p-0.5 backdrop-blur-sm">
-      <Link href="/" aria-label="Home" className="pointer-events-auto ">
-        <Image src={logoImage} alt="" className="w-40" priority />
+      <Link href="/" aria-label="Home" className="pointer-events-auto">
+        <Image
+          src={resolvedTheme === "dark" ? darkLogo : lightLogo}
+          alt=""
+          className="w-40"
+          priority
+        />
       </Link>
     </div>
   );
