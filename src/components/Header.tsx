@@ -147,9 +147,11 @@ function clamp(number: number, a: number, b: number) {
 
 function Avatar() {
   return (
-    <Link href="/" aria-label="Home" className="pointer-events-auto">
-      <Image src={logoImage} alt="" className="w-40" priority />
-    </Link>
+    <div className="rounded-lg p-0.5 backdrop-blur-sm">
+      <Link href="/" aria-label="Home" className="pointer-events-auto ">
+        <Image src={logoImage} alt="" className="w-40" priority />
+      </Link>
+    </div>
   );
 }
 
