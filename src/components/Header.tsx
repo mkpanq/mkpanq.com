@@ -147,14 +147,14 @@ function clamp(number: number, a: number, b: number) {
 }
 
 function Avatar() {
-  const { resolvedTheme } = useTheme();
   return (
     <div className="rounded-lg p-0.5 backdrop-blur-sm">
       <Link href="/" aria-label="Home" className="pointer-events-auto">
+        <Image src={lightLogo} alt="" className="w-40 dark:hidden" priority />
         <Image
-          src={resolvedTheme === "dark" ? darkLogo : lightLogo}
+          src={darkLogo}
           alt=""
-          className="w-40"
+          className="w-40 not-dark:hidden"
           priority
         />
       </Link>
